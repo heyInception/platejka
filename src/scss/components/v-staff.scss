@@ -1,0 +1,137 @@
+.v-staff {
+  &__column {
+    display: flex;
+    flex-flow: column;
+    gap: 35px;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: #343433;
+    span {
+      background: linear-gradient(62deg, #18790f 0%, #27d517 200%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 158px;
+  }
+
+  &__img {
+    flex: 0 0 453px;
+    img {
+      border-radius: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column;
+    gap: 39px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -65px;
+      left: -104px;
+      background-image: url("data:image/svg+xml,%3Csvg width='65' height='51' viewBox='0 0 65 51' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 51V35.8473C0 31.5447 0.819328 27.1486 2.45798 22.6589C4.09664 18.1692 6.25875 13.9367 8.94433 9.96148C11.6299 5.98624 14.5431 2.66574 17.6838 0L30.52 7.7868C27.9709 11.9023 25.8771 16.205 24.2384 20.6946C22.6453 25.1843 21.8487 30.1884 21.8487 35.707V51H0ZM34.48 51V35.8473C34.48 31.5447 35.2994 27.1486 36.938 22.6589C38.5767 18.1692 40.7388 13.9367 43.4244 9.96148C46.1099 5.98624 49.0231 2.66574 52.1639 0L65 7.7868C62.451 11.9023 60.3571 16.205 58.7185 20.6946C57.1253 25.1843 56.3288 30.1884 56.3288 35.707V51H34.48Z' fill='url(%23paint0_linear_1_1908)' /%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1_1908' x1='-29.2635' y1='51.5439' x2='39.1062' y2='-110.599' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2318790F' /%3E%3Cstop offset='1' stop-color='%2327D517' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+      width: 65px;
+      height: 51px;
+    }
+    p {
+      margin: 0;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 130%;
+      letter-spacing: -0.03em;
+      color: #343433;
+      max-width: 697px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 65px;
+      right: -75px;
+      background-image: url("data:image/svg+xml,%3Csvg width='65' height='51' viewBox='0 0 65 51' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M65 0V15.1527C65 19.4553 64.1807 23.8514 62.542 28.3411C60.9034 32.8308 58.7412 37.0633 56.0557 41.0385C53.3701 45.0138 50.4569 48.3343 47.3162 51L34.48 43.2132C37.0291 39.0977 39.1229 34.795 40.7616 30.3054C42.3547 25.8157 43.1513 20.8116 43.1513 15.293V0H65ZM30.52 0V15.1527C30.52 19.4553 29.7006 23.8514 28.062 28.3411C26.4233 32.8308 24.2612 37.0633 21.5756 41.0385C18.8901 45.0138 15.9769 48.3343 12.8361 51L0 43.2132C2.54902 39.0977 4.64286 34.795 6.28152 30.3054C7.87465 25.8157 8.67122 20.8116 8.67122 15.293V0H30.52Z' fill='url(%23paint0_linear_1_1909)' /%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1_1909' x1='94.2635' y1='-0.543929' x2='25.8938' y2='161.599' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2318790F' /%3E%3Cstop offset='1' stop-color='%2327D517' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+      width: 65px;
+      height: 51px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-flow: column;
+    b {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 170%;
+      color: #343433;
+    }
+    p {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      color: #343433;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 118px;
+  }
+
+  &__item {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    gap: 18px;
+    position: relative;
+    flex: 1 0 0;
+    &:last-child {
+      flex: 0 0 327px;
+    }
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -58px;
+      background-color: #000;
+      width: 1px;
+      height: 100%;
+    }
+  }
+
+  &__num {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 110px;
+    line-height: 80%;
+    letter-spacing: -0.03em;
+    color: #343433;
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: -0.03em;
+    color: #343433;
+  }
+}

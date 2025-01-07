@@ -1,0 +1,189 @@
+.hero {
+  &__wrap {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    margin: 20px 0 27px;
+  }
+  &__row {
+    display: flex;
+    flex-flow: row;
+
+    &_left {
+      flex: 0 0 927px;
+      background: var(--pure-gray);
+      border-radius: 40px;
+    }
+
+    &_right {
+      flex: 1 0 0;
+      border-top-left-radius: 24px;
+      border-bottom-left-radius: 24px;
+      background: #939ad9;
+      position: relative;
+      &::before {
+        content: "";
+        width: 100vw;
+        height: 100%;
+        background: linear-gradient(90deg, #949ADA 33%, #9DA3DF 82%);
+        position: absolute;
+        left: 100%;
+      }
+      &::after {
+        content: "";
+        width: 666px;
+        height: 100%;
+        background: url(../../img/hero.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        background-position-y: bottom;
+        background-size: cover;
+        border-top-left-radius: 24px;
+      border-bottom-left-radius: 24px;
+      }
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    padding: 40px;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url(../../img/coin.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 23px;
+      bottom: 21px;
+      width: 126px;
+      height: 109px;
+      display: block;
+    }
+  }
+  &__badge {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-white);
+    background: var(--green);
+    border-radius: 100px;
+    height: 37px;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: var(--text-black);
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: -0.03em;
+    color: var(--text-black);
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    li {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      color: var(--text-black);
+      &::before {
+        margin-right: 15px;
+        vertical-align: text-bottom;
+        content: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='%230E76F0'/%3E%3C/svg%3E%0A");
+      }
+    }
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    a {
+      display: block;
+      max-width: max-content;
+      background: var(--blue);
+      border-radius: 100px;
+      padding: 0 25px;
+      height: 60px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 135%;
+      letter-spacing: -0.03em;
+      text-align: center;
+      color: var(--text-white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__col {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+  }
+  &__img {
+    height: 100%;
+    img {
+      vertical-align: bottom;
+      border-radius: 24px 0 0 24px;
+      height: 100%;
+    }
+  }
+}
+.ach {
+  &__items {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0 67px;
+  }
+
+  &__item {
+    flex: 1 0 0;
+    width: max-content;
+    height: 70px;
+    background: var(--pure-gray);
+    border-radius: 45px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 25px 5px 5px;
+  }
+
+  &__img {
+    flex: 0 0 56px;
+    height: 56px;
+    img {
+      height: 56px;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: -0.03em;
+    color: var(--text-black);
+  }
+}

@@ -1,0 +1,131 @@
+.service {
+  &__column {
+    display: flex;
+    flex-flow: column;
+    margin: 75px 0 110px;
+    gap: 37px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: var(--text-black);
+    max-width: 855px;
+  }
+  &__subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: -0.03em;
+    color: var(--gray);
+  }
+
+  &__items {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+  }
+
+  &__item {
+    border-radius: 24px;
+    background: var(--pure-gray);
+    padding: 30px;
+    flex: 1 0 690px;
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    position: relative;
+    &:nth-child(1) {
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-image: url(../../img/service-img-1.png);
+        width: 174px;
+        height: 140px;
+      }
+    }
+    &:nth-child(2) {
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-image: url(../../img/service-img-2.png);
+        width: 115px;
+        height: 115px;
+      }
+    }
+    &:nth-child(3) {
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-image: url(../../img/service-img-3.png);
+        width: 206px;
+        height: 194px;
+      }
+    }
+    &:nth-child(4) {
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-image: url(../../img/service-img-4.png);
+        width: 134px;
+        height: 134px;
+      }
+    }
+  }
+
+  &__head {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: var(--text-black);
+  }
+
+  &__subhead {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: -0.03em;
+    color: var(--text-black);
+    max-width: 596px;
+  }
+
+  &__buttons {
+    margin-top: 35px;
+    button {
+      height: 46px;
+      border-radius: 100px;
+    }
+    &_bwhite {
+      border: 1px solid var(--text-black);
+      border-radius: 120px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 135%;
+      letter-spacing: -0.03em;
+      color: var(--text-black);
+      padding: 11px 25px;
+    }
+
+    &_blue {
+      padding: 14px 54px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 135%;
+      letter-spacing: -0.03em;
+      color: var(--text-white);
+      background: var(--blue);
+    }
+  }
+}

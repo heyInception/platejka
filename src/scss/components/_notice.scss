@@ -1,0 +1,145 @@
+.notice {
+  &__row {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    background: #3b5fef;
+    margin: 110px 0;
+  }
+
+  &__item {
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    padding: 40px;
+    flex: 1 0 0;
+    &:first-child {
+      flex: 0 0 906px;
+    }
+    &_white {
+      background: var(--pure-gray);
+    }
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: var(--text-black);
+  }
+
+  &__content {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: -0.03em;
+    color: var(--text-black);
+  }
+
+  &__head {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: var(--text-black);
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    span {
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: -0.03em;
+      color: var(--text-black);
+    }
+    p {
+      margin: 0;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      color: var(--text-black);
+    }
+  }
+  &__rows {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  &__top {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: var(--white);
+    max-width: 480px;
+  }
+
+  &__wrap {
+    flex: 0 0 632px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+  }
+
+  &__img {
+  }
+
+  &__wrapper {
+    flex: 1 0 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    p {
+      margin: 0;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      color: var(--white-80);
+    }
+  }
+  .social {
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+
+    &__item {
+    }
+
+    &__link {
+    }
+
+    &__link--tg {
+      &::before {
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_631_1529)'%3E%3Cpath d='M20.0156 40.0312C31.0699 40.0312 40.0312 31.0699 40.0312 20.0156C40.0312 8.96128 31.0699 0 20.0156 0C8.96128 0 0 8.96128 0 20.0156C0 31.0699 8.96128 40.0312 20.0156 40.0312Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.04164 19.797C14.8717 17.2405 18.7688 15.5881 20.733 14.7775C26.2825 12.4704 27.436 12.0651 28.1843 12.0339C28.3402 12.0339 28.7143 12.0651 28.9637 12.2522C29.1508 12.4081 29.2131 12.6263 29.2443 12.7822C29.2755 12.9381 29.3066 13.281 29.2755 13.5616C28.9637 16.7105 27.6854 24.4112 26.9995 27.9342C26.719 29.4307 26.1578 29.9295 25.6278 29.9918C24.4742 30.0854 23.5701 29.2124 22.4477 28.4954C20.7018 27.3418 19.7041 26.6247 17.9894 25.5024C16.0253 24.1929 17.3035 23.4759 18.4259 22.3223C18.7065 22.0106 23.8507 17.3652 23.9442 16.9287C23.9442 16.8664 23.9754 16.6793 23.8507 16.5858C23.726 16.4922 23.5701 16.5234 23.4454 16.5546C23.2583 16.5858 20.4524 18.4564 14.9964 22.1353C14.1858 22.6964 13.4688 22.9459 12.814 22.9459C12.097 22.9459 10.7252 22.5406 9.69635 22.1976C8.44927 21.7923 7.45161 21.5741 7.54514 20.8882C7.6075 20.5452 8.10633 20.1711 9.04164 19.797Z' fill='%233B5FEF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_631_1529'%3E%3Crect width='40' height='40' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        width: 40px;
+        height: 40px;
+        display: block;
+      }
+    }
+
+    &__link--wa {
+      &::before {
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg width='41' height='40' viewBox='0 0 41 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.709106' width='40' height='40' rx='20' fill='white'/%3E%3Cg clip-path='url(%23clip0_631_1534)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M28.6579 13.0038C26.6768 11.0312 24.0421 9.94436 21.2348 9.94336C15.4502 9.94336 10.7424 14.6247 10.7404 20.3788C10.7394 22.2183 11.223 24.0138 12.1413 25.5961L10.6523 31.0045L16.2156 29.5533C17.7483 30.385 19.4742 30.8228 21.2303 30.8233H21.2348C27.0185 30.8233 31.7268 26.1415 31.7288 20.3873C31.7298 17.5986 30.6394 14.977 28.6579 13.0043V13.0038ZM21.2348 29.0609H21.2313C19.6664 29.0604 18.1312 28.642 16.7917 27.8519L16.4732 27.6638L13.1718 28.525L14.0529 25.3238L13.8456 24.9956C12.9725 23.6145 12.5111 22.0181 12.5121 20.3794C12.5141 15.597 16.4269 11.7058 21.2384 11.7058C23.5681 11.7068 25.758 12.61 27.4049 14.2499C29.0519 15.8892 29.9581 18.069 29.9571 20.3863C29.9551 25.1693 26.0423 29.0604 21.2348 29.0604V29.0609ZM26.0191 22.5646C25.757 22.434 24.4679 21.8035 24.2273 21.7164C23.9868 21.6293 23.8122 21.5858 23.6376 21.847C23.463 22.1083 22.9603 22.6957 22.8073 22.8694C22.6543 23.0435 22.5014 23.065 22.2392 22.9344C21.9771 22.8038 21.1322 22.5286 20.1304 21.6403C19.351 20.9488 18.8246 20.0951 18.6717 19.8339C18.5187 19.5727 18.6556 19.4316 18.7863 19.302C18.9041 19.1849 19.0485 18.9972 19.1798 18.8451C19.3112 18.693 19.3545 18.5839 19.442 18.4102C19.5296 18.2361 19.4858 18.084 19.4204 17.9534C19.3549 17.8228 18.8307 16.5392 18.6118 16.0173C18.3989 15.5089 18.1826 15.5779 18.022 15.5694C17.869 15.5619 17.6945 15.5604 17.5194 15.5604C17.3442 15.5604 17.0604 15.6255 16.8199 15.8867C16.5794 16.1479 15.9021 16.7789 15.9021 18.0619C15.9021 19.345 16.8416 20.5855 16.9729 20.7597C17.1042 20.9338 18.8221 23.5674 21.4522 24.6974C22.0777 24.9661 22.5663 25.1267 22.9472 25.2468C23.5752 25.4455 24.1468 25.4175 24.5987 25.3504C25.1024 25.2753 26.15 24.7194 26.3684 24.1104C26.5867 23.5014 26.5867 22.9789 26.5214 22.8703C26.456 22.7618 26.2808 22.6962 26.0187 22.5656L26.0191 22.5646Z' fill='%23249100'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_631_1534'%3E%3Crect width='21.0765' height='21.0765' fill='white' transform='translate(10.6523 9.94336)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        width: 40px;
+        height: 40px;
+        display: block;
+      }
+    }
+  }
+}

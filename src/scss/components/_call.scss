@@ -1,0 +1,71 @@
+.call {
+  &__column {
+    display: flex;
+    flex-flow: column;
+    gap: 48px;
+    background: var(--blue);
+    border-radius: 40px;
+    margin: 110px 0;
+    align-items: center;
+    padding: 32px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-white);
+    max-width: 670px;
+  }
+
+  &__form {
+    form {
+      p {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        column-gap: 16px;
+        margin: 0;
+      }
+    }
+    .wpcf7-spinner {
+      flex: 1 0 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input {
+      border: 1px solid var(--pure-gray);
+      border-radius: 100px;
+      width: 270px;
+      height: 50px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 135%;
+      letter-spacing: -0.03em;
+      color: var(--pure-gray);
+      background-color: transparent;
+      padding: 0 12px;
+      outline: none;
+      &::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 135%;
+        letter-spacing: -0.03em;
+        color: var(--pure-gray);
+      }
+      &[type="submit"] {
+        background-color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 135%;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: var(--blue);
+        cursor: pointer;
+      }
+    }
+  }
+}

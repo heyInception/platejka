@@ -1,0 +1,22 @@
+.reviews {
+  &__column {
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    margin: 110px 0;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: var(--text-black);
+  }
+
+  &__widget {
+  }
+}
+.container {
+}
