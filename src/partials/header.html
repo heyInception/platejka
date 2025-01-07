@@ -1,3 +1,167 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="search search_desk">
+    <div class="container">
+      <form role="search" method="get" id="searchform" action="https://hydum.ru/">
+        <input type="text" value="" name="s" class="input-search search-input" id="s" placeholder="Поиск по сайту">
+        <button type="submit">
+        </button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="result-search" style="display: none;">
+        <div class="preloader"><img width="200" height="200"
+            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E"
+            class="loader" data-lazy-src="https://hydum.ru/wp-content/themes/hydum/img/loader.gif"><noscript><img
+              width="200" height="200" src="https://hydum.ru/wp-content/themes/hydum/img/loader.gif"
+              class="loader"></noscript>
+        </div>
+        <div class="result-search-list"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header__row header__row_top">
+      <div class="header__column">
+        <div class="header__search">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14 14L11.6667 11.6667M13.3333 7.66667C13.3333 10.7963 10.7963 13.3333 7.66667 13.3333C4.53705 13.3333 2 10.7963 2 7.66667C2 4.53705 4.53705 2 7.66667 2C10.7963 2 13.3333 4.53705 13.3333 7.66667Z"
+              stroke="#9DA0A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="header__loc">Адрес: Москва, ул. Нобеля, дом 7, этаж 4, помещение 10</div>
+        <div class="header__time">Время работы: 9.00 - 18.00, пн-вс</div>
+      </div>
+      <div class="header__column">
+        <div class="header__mail">
+          <a href="mailto:info@platejka.ru">info@platejka.ru</a>
+        </div>
+        <div class="header__phone">
+          <a href="tel:+7 985 786 98 09">+7 985 786 98 09</a>
+        </div>
+        <ul class="list-reset social" title="Соц. сети">
+          <li class="social__item"><a href="#" target="_blank" class="social__link social__link--tg"
+              aria-label="Наша страничка в Телеграме">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.0093 24.0187C18.6419 24.0187 24.0187 18.6419 24.0187 12.0093C24.0187 5.37677 18.6419 0 12.0093 0C5.37677 0 0 5.37677 0 12.0093C0 18.6419 5.37677 24.0187 12.0093 24.0187Z"
+                  fill="url(#paint0_linear_117_2631)" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.4248 11.8785C8.92285 10.3446 11.2611 9.35321 12.4396 8.86685C15.7693 7.48259 16.4614 7.23941 16.9104 7.2207C17.0039 7.2207 17.2284 7.23941 17.378 7.35165C17.4903 7.44518 17.5277 7.57612 17.5464 7.66965C17.5651 7.76318 17.5838 7.96895 17.5651 8.13731C17.378 10.0266 16.6111 14.647 16.1995 16.7608C16.0312 17.6587 15.6945 17.958 15.3765 17.9955C14.6843 18.0516 14.1419 17.5278 13.4684 17.0976C12.4209 16.4054 11.8223 15.9752 10.7935 15.3018C9.61498 14.5161 10.3819 14.0859 11.0554 13.3937C11.2237 13.2067 14.3102 10.4195 14.3663 10.1576C14.3663 10.1202 14.385 10.0079 14.3102 9.9518C14.2354 9.89568 14.1419 9.91439 14.067 9.9331C13.9548 9.9518 12.2713 11.0742 8.99767 13.2815C8.51131 13.6182 8.08107 13.7679 7.68824 13.7679C7.258 13.7679 6.43493 13.5247 5.81763 13.3189C5.06938 13.0757 4.47078 12.9448 4.5269 12.5333C4.56432 12.3275 4.86361 12.103 5.4248 11.8785Z"
+                  fill="white" />
+                <defs>
+                  <linearGradient id="paint0_linear_117_2631" x1="0" y1="12.0007" x2="24.0013" y2="12.0007"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#2AABEE" />
+                    <stop offset="1" stop-color="#229ED9" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a></li>
+          <li class="social__item"><a href="#" target="_blank" class="social__link social__link--wa"
+              aria-label="Наша страничка во WhatsApp">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="12" fill="#25D366" />
+                <g clip-path="url(#clip0_117_2634)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17.6687 6.32334C16.1648 4.82586 14.1647 4.00076 12.0336 4C7.64227 4 4.06838 7.55377 4.06685 11.922C4.06608 13.3184 4.43318 14.6814 5.13031 15.8826L4 19.9883L8.22327 18.8867C9.3868 19.5181 10.697 19.8504 12.0302 19.8508H12.0336C16.4242 19.8508 19.9985 16.2967 20 11.9284C20.0008 9.8114 19.173 7.8212 17.6687 6.32372V6.32334ZM12.0336 18.5129H12.0309C10.8429 18.5125 9.67751 18.1949 8.66067 17.5951L8.41885 17.4523L5.91262 18.106L6.58148 15.6759L6.4241 15.4267C5.76135 14.3783 5.41107 13.1665 5.41183 11.9224C5.41336 8.29187 8.38371 5.33793 12.0363 5.33793C13.8049 5.33869 15.4673 6.02438 16.7176 7.26924C17.9678 8.51372 18.6558 10.1685 18.655 11.9277C18.6535 15.5586 15.6832 18.5125 12.0336 18.5125V18.5129ZM15.6656 13.5813C15.4665 13.4822 14.4879 13.0035 14.3053 12.9374C14.1227 12.8713 13.9902 12.8383 13.8576 13.0366C13.7251 13.2349 13.3435 13.6808 13.2273 13.8126C13.1112 13.9448 12.9951 13.9612 12.796 13.862C12.5971 13.7629 11.9557 13.5539 11.1952 12.8796C10.6035 12.3547 10.2039 11.7066 10.0878 11.5083C9.97164 11.31 10.0756 11.2029 10.1748 11.1045C10.2642 11.0156 10.3739 10.8731 10.4736 10.7577C10.5733 10.6422 10.6061 10.5594 10.6726 10.4275C10.7391 10.2953 10.7058 10.1799 10.6562 10.0807C10.6065 9.98157 10.2085 9.00716 10.0423 8.61096C9.88071 8.22501 9.71649 8.27744 9.59462 8.27098C9.47849 8.26528 9.34596 8.26414 9.21302 8.26414C9.08009 8.26414 8.86462 8.31353 8.68204 8.51182C8.49947 8.7101 7.98529 9.18913 7.98529 10.1631C7.98529 11.1371 8.69849 12.0789 8.79818 12.2111C8.89787 12.3433 10.202 14.3426 12.1986 15.2004C12.6735 15.4043 13.0444 15.5263 13.3335 15.6175C13.8103 15.7683 14.2442 15.747 14.5872 15.6961C14.9696 15.6391 15.7649 15.2171 15.9307 14.7547C16.0964 14.2924 16.0964 13.8958 16.0468 13.8134C15.9972 13.731 15.8642 13.6812 15.6652 13.5821L15.6656 13.5813Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_117_2634">
+                    <rect width="16" height="16" fill="white" transform="translate(4 4)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__row header__row_bottom">
+      <div class="header__logo">
+        <a href="/">
+          <img src="../img/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="header__nav">
+        <nav>
+          <ul>
+            <li><a href="">Интернет-бухгалтерия</a></li>
+            <li><a href="">Регистрация бизнеса</a></li>
+            <li><a href="">Бухгалтерское обслуживание</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">О компании</a></li>
+          </ul>
+        </nav>
+        <div class="header__burger">
+          <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
+      <div class="header__button">
+        <button class="btn-reset" data-graph-path="call">Оставить заявку</button>
+      </div>
+
+    </div>
+  </div>
 </header>
+<div class="fixed-menu" data-menu>
+  <div class="fixed-menu__row">
+    <div class="fixed-menu__logo">
+      <a href="/">
+        <img src="../img/logo.svg" alt="">
+      </a>
+    </div>
+    <div class="fixed-menu__close">
+      <button class="close-menu burger burger__active" data-close>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+  <div class="fixed-menu__search">
+    <form role="search" method="get" id="searchform" action="https://hydum.ru/">
+      <input type="text" value="" name="s" class="input-search search-input" id="s" placeholder="Поиск по сайту">
+      <button type="submit">
+      </button>
+    </form>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="">Интернет-бухгалтерия</a></li>
+      <li><a href="">Регистрация бизнеса</a></li>
+      <li><a href="">Бухгалтерское обслуживание</a></li>
+      <li><a href="">Услуги</a></li>
+      <li><a href="">О компании</a></li>
+    </ul>
+  </nav>
+  <div class="fixed-menu__column">
+    <div class="fixed-menu__head">Контакты</div>
+    <div class="fixed-menu__contacts">
+      <p>Москва, ул. Нобеля, дом 7, этаж 4, помещение 10</p>
+      <p>9.00 - 18.00, пн-вс</p>
+      <a href="tel:+">8 800 333 78 26</a>
+      <a href="mailto:f1@knopka.com">f1@knopka.com</a>
+    </div>
+  </div>
+  <div class="fixed-menu__column">
+    <div class="fixed-menu__head">Социальные сети</div>
+    <div class="fixed-menu__social">
+      <ul class="list-reset social" title="Соц. сети">
+        <li class="social__item"><a href="#" target="_blank" class="social__link social__link--ok"
+            aria-label="Наша страничка в Однокласниках"></a></li>
+        <li class="social__item"><a href="#" target="_blank" class="social__link social__link--tg"
+            aria-label="Наша страничка в Телеграме"></a></li>
+        <li class="social__item"><a href="#" target="_blank" class="social__link social__link--vk"
+            aria-label="Наша страничка во Вконтакте"></a></li>
+        <li class="social__item"><a href="#" target="_blank" class="social__link social__link--wa"
+            aria-label="Наша страничка в WhatsApp"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fixed-menu__column">
+    <div class="fixed-menu__button">
+      <button class="btn-reset " data-graph-path="">Оставить заявку</button>
+    </div>
+  </div>
+</div>

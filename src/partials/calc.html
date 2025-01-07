@@ -1,0 +1,60 @@
+<section class="calc">
+  <div class="container">
+    <div class="calc__column">
+      <div class="calc__title">Рассчитайте стоимость международного перевода</div>
+      <div class="calc__row">
+        <div class="calc__item">
+          <div class="calc__valute">
+            <div class="calc__top">Валюта платежа</div>
+            <div class="calc__wrap">
+              <button class="btn-reset calc__button calc__button_usd calc__button_active">Доллары</button>
+              <button class="btn-reset calc__button calc__button_uer">Евро</button>
+              <button class="btn-reset calc__button calc__button_cn">Юани</button>
+            </div>
+          </div>
+          <div class="calc__input">
+            <div class="calc__top">Страна отправителя</div>
+            <div class="calc__input_select">
+              <select name="" id="countryFrom">
+                <option value="Russia">Россия</option>
+              </select>
+            </div>
+          </div>
+          <div class="calc__input ">
+            <div class="calc__top">Страна получателя</div>
+            <div class="calc__input_select">
+              <select name="" id="countryTo">
+                <option value="Russia">Россия</option>
+              </select>
+            </div>
+          </div>
+          <div class="calc__input">
+            <div class="calc__top">Сумма перевода</div>
+            <div class="calc__input_input">
+              <input type="number" id="amount" placeholder="20 000">
+              <span id="currency">USD</span>
+            </div>
+          </div>
+        </div>
+        <div class="calc__item calc__item_green">
+          <div class="calc__head">Итого</div>
+          <div class="calc__commission">
+            <span>Комиссия платежного агента</span>
+            <div id="commission" class="calc__commission-value">0,00 <span>₽</span></div>
+          </div>
+          <div class="calc__commission_main">
+            <span>Основной платеж</span>
+            <div id="totalWithCommission" class="calc__commission_main-value">0,00 <span>₽</span></div>
+          </div>
+          <div class="calc__wrapper">
+            <div class="calc__transfer">
+              <span>К переводу с комиссией</span>
+              <div id="total" class="calc__transfer-value">0,00 <span>₽</span></div>
+            </div>
+            <button class="btn-reset calc__button_main">Начать перевод</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
