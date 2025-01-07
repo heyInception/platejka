@@ -4,76 +4,28 @@
 @include('partials/head.html')
 
 <body class="page__body">
-    <div class="site-container">
-        @include('partials/header.html')
-        <main class="main">
-            <section class="connections">
-                <div class="container">
-                    <div class="connections__row">
-                        <div class="connections__title">Мы подключаем</div>
-                        <div class="connections__column connections__column_row">
-                            <div class="connections__items">
-                                <div class="connections__head">Каналы</div>
-                                <div class="connections__options">
-                                    <div class="connections__radio">
-                                        <input id="radio-1" type="radio" name="channels" value="1" checked data-name="WhatsApp" data-storage="WhatsApp">
-                                        <label for="radio-1" class="connection-1">WhatsApp </label>
-                                    </div>
-                                    <div class="connections__radio">
-                                        <input id="radio-2" type="radio" name="channels" value="2" data-name="Telegram" data-storage="Telegram">
-                                        <label for="radio-2">Telegram</label>
-                                    </div>
-                                    <div class="connections__radio">
-                                        <input id="radio-3" type="radio" name="channels" value="3" data-name="Instagram" data-storage="Instagram">
-                                        <label for="radio-3">Instagram</label>
-                                    </div>
-                                    <div class="connections__radio">
-                                        <input id="radio-4" type="radio" name="channels" value="4" data-name="WABA" data-storage="WABA">
-                                        <label for="radio-4">WABA</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="connections__items">
-                                <div class="connections__head">CRM</div>
-                                <div class="connections__options">
-                                    <div class="connections__radio">
-                                        <input id="radio-5" type="radio" name="crm" value="5" data-name="1C" data-storage="1C">
-                                        <label for="radio-5">1C</label>
-                                    </div>
-                                    <div class="connections__radio">
-                                        <input id="radio-6" type="radio" name="crm" value="6" checked data-name="amoCRM" data-storage="amoCRM">
-                                        <label for="radio-6">amoCRM</label>
-                                    </div>
-                                    <div class="connections__radio">
-                                        <input id="radio-7" type="radio" name="crm" value="7" data-name="Bitrix" data-storage="Bitrix">
-                                        <label for="radio-7">Bitrix</label>
-                                    </div>
-                                    <div class="connections__radio">
-                                        <input id="radio-8" type="radio" name="crm" value="8" data-name="другие crm" data-storage="Allcrm">
-                                        <label for="radio-8" class="connection-8">и другие</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="connections__column">
-                            <div class="connections__subtitle">Нужна интеграция <span id="firstradio">WhatsApp</span> в <span id="secondradio">1С</span>?</div>
-                            <div class="connections__content">
-                                Wazzup — лидер по количеству скачиваний из Маркета Битрикс. Работает с Открытыми линиями. Поддерживает все функции Бизнес-процессов и Роботов.
-                            </div>
-                            <div class="connections__buttons">
-                                <button class="connections__btn connections__btn_green">Попробовать бесплатно</button>
-                                <button class="connections__btn connections__btn_text">Узнать подробнее</button>
-                                <span class="connections__text">Возможности. Фичи. Тарифы. Функции</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            @include('partials/tariff.html')
-        </main>
-        @include('partials/footer.html')
-        <!-- @include('html/h1.html') пример include -->
-    </div>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/hero.html')
+      @include('partials/service.html')
+      @include('partials/guarantees.html')
+      @include('partials/notice.html')
+      @include('partials/calc.html')
+      @include('partials/spec.html')
+      @include('partials/rev.html')
+      @include('partials/compare.html')
+      @include('partials/about.html')
+      @include('partials/reviews.html')
+      @include('partials/seo.html')
+      @include('partials/request.html')
+      @include('partials/faq.html')
+      @include('partials/call.html')
+
+    </main>
+    @include('partials/footer.html')
+
+  </div>
 </body>
 
 </html>

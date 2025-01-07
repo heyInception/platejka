@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <div id="cookieHeader" class="cookie-popup ">
+      <div class="container">
+        <div class="cookie-popup__row">
+          <a href="#" class="cookie-popup__content"><span>Тестируйте все возможности 3 дня бесплатно. Зарегистрироваться
+              — просто, подключить — быстро, избавиться от проблемы — бесценно 🔥</span></a>
+          <button class="btn-reset cookie-popup__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.9 19L5.5 17.6L11.1 12L5.5 6.4L6.9 5L12.5 10.6L18.1 5L19.5 6.4L13.9 12L19.5 17.6L18.1 19L12.5 13.4L6.9 19Z"
+                fill="#626570" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/hero.html')
+      @include('partials/services.html')
+      @include('partials/service.html')
+      @include('partials/rev.html')
+      @include('partials/spec.html')
+      @include('partials/calc.html')
+      @include('partials/connect.html')
+      @include('partials/compare.html')
+      @include('partials/slider.html')
+      @include('partials/package.html')
+      @include('partials/about.html')
+      @include('partials/clients.html')
+      @include('partials/save.html')
+      @include('partials/seo.html')
+      @include('partials/request.html')
+      @include('partials/call.html')
+      @include('partials/faq.html')
+    </main>
+    @include('partials/footer.html')
+
+  </div>
+</body>
+
+</html>
